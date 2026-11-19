@@ -1,0 +1,62 @@
+[
+  {
+    "id": "energy-steam-condensate-return",
+    "category": "能源",
+    "title": "蒸汽冷凝水回收与水质管理",
+    "content": "蒸汽在工艺设备放热后形成的冷凝水仍带有热量，宜评估回收至锅炉给水或适用的热水系统，以减少补水和加热负荷。设计或改造时应核对回水管路、压差、疏水与输送条件，并按水质要求监测冷凝水；若可能受到工艺物料污染，应先隔离、检测和处理，达标后方可回用。回收方案需服从锅炉水质、设备安全和生产工艺要求，不应把所有冷凝水不经验证直接回用。",
+    "keywords": ["蒸汽", "冷凝水", "凝结水回收", "锅炉给水", "水质管理", "污染隔离"],
+    "sourceTitle": "工业锅炉系统节能设计指南（征求意见稿）",
+    "sourceUrl": "https://www.cnis.ac.cn/bydt/bzyjzq/gbyjzq/202310/P020231020603010720407.pdf",
+    "publisher": "国家市场监督管理总局、国家标准化管理委员会"
+  },
+  {
+    "id": "energy-steam-network-design",
+    "category": "能源",
+    "title": "蒸汽管网与疏水运行维护",
+    "content": "蒸汽系统应依据设计压力、温度、流量和允许压损确定管道材料与管径，合理布置并保证疏水通畅，避免水击、共振和不必要的流阻。运行维护可检查保温完整性、疏水装置工作状态、阀门内漏及异常排放；停产或负荷切换时应遵循工艺规程，避免因盲目关阀影响设备升温、产品质量或安全。系统优化需结合实际用汽点、压力需求及运行工况，不能仅凭管网局部现象调整全系统压力。",
+    "keywords": ["蒸汽管网", "蒸汽", "蒸汽系统", "疏水", "水击", "保温", "压力损失", "运行维护"],
+    "sourceTitle": "工业锅炉系统节能设计指南（征求意见稿）",
+    "sourceUrl": "https://www.cnis.ac.cn/bydt/bzyjzq/gbyjzq/202310/P020231020603010720407.pdf",
+    "publisher": "国家市场监督管理总局、国家标准化管理委员会"
+  },
+  {
+    "id": "energy-compressed-air-system",
+    "category": "能源",
+    "title": "压缩空气系统按需供气与系统优化",
+    "content": "压缩空气应优先用于确有需要且适合气动驱动的用途，避免用压缩空气替代可行的低能耗方式。先开展系统评估，梳理压缩机、储气、干燥过滤、管网和终端的运行关系，再检查泄漏、压力损失、设备空载运行和不合理用气。修漏后应复核压力与控制策略，避免通过持续提高供气压力掩盖管径或过滤器压损。任何压力、露点或供气质量调整都须满足设备要求、产品质量及安全规范；不要把某个厂的节能比例直接套用到本厂。",
+    "keywords": ["压缩空气", "泄漏检测", "压力损失", "空载运行", "系统评估", "供气质量"],
+    "sourceTitle": "Energy Efficiency Improvement and Cost Saving Opportunities for the Pharmaceutical Industry: An ENERGY STAR Guide for Energy and Plant Managers",
+    "sourceUrl": "https://www.osti.gov/servlets/purl/929403",
+    "publisher": "美国能源部劳伦斯伯克利国家实验室"
+  },
+  {
+    "id": "energy-pumps-motors",
+    "category": "能源",
+    "title": "泵与电机的系统匹配和维护",
+    "content": "泵和电机应按实际流量、扬程、负荷变化及运行时数评估，而非只比较单机铭牌效率。核查泵是否长期节流、旁路回流或偏离高效运行区，检查叶轮、密封、轴承和联轴器状态；对于负荷变化的系统，可在工艺允许时评估变速调节或泵组优化。电机侧应检查负载匹配、供电不平衡、过热与振动。改造前须验证最小流量、工艺压力、备用能力及防护要求；变频并非所有场景都适用，需结合系统曲线和控制逻辑判断。",
+    "keywords": ["泵", "电机", "变频调速", "流量", "扬程", "供电不平衡", "维护"],
+    "sourceTitle": "Energy Efficiency Improvement and Cost Saving Opportunities for the Pharmaceutical Industry: An ENERGY STAR Guide for Energy and Plant Managers",
+    "sourceUrl": "https://www.osti.gov/servlets/purl/929403",
+    "publisher": "美国能源部劳伦斯伯克利国家实验室"
+  },
+  {
+    "id": "energy-waste-heat-recovery",
+    "category": "能源",
+    "title": "压缩机及锅炉烟气余热利用",
+    "content": "可先盘点空压机、锅炉排烟及其他连续热源的温度、流量、时段和附近热需求，再比较用于工艺预热、热水或空间供热等用途的可行性。余热回收需核对热源与热汇的同时性、换热温差、输送距离、腐蚀与结垢风险及维护条件。锅炉烟气降温可能带来酸性冷凝和低温腐蚀，换热器材质、排水与烟气出口条件应按燃料成分及设备要求设计；压缩机余热也只有在温度等级和用热时段匹配时才值得回收。",
+    "keywords": ["余热回收", "压缩机余热", "烟气余热", "换热器", "低温腐蚀", "热源热汇匹配"],
+    "sourceTitle": "工业锅炉系统节能设计指南（征求意见稿）",
+    "sourceUrl": "https://www.cnis.ac.cn/bydt/bzyjzq/gbyjzq/202310/P020231020603010720407.pdf",
+    "publisher": "国家市场监督管理总局、国家标准化管理委员会"
+  },
+  {
+    "id": "energy-metering-continuous-improvement",
+    "category": "能源",
+    "title": "能耗计量与持续改进闭环",
+    "content": "能源管理应从稳定的基线和责任机制开始：按能源种类、主要工序及关键设备采集用量和生产数据，统一计量边界、单位与时间周期，并记录停产、产品结构或负荷变化等影响因素。定期比较单位产品能耗和趋势，识别异常后安排现场核查，形成措施、负责人、期限及复测记录。计量仪表应满足用途所需的量程、精度和校准管理；数据波动可能来自工况或计量问题，不能仅凭单一读数判定设备低效。持续跟踪措施效果，避免一次性改造后缺少维护和复查。",
+    "keywords": ["能耗计量", "能源基线", "单位产品能耗", "仪表校准", "持续改进", "异常分析"],
+    "sourceTitle": "Energy Efficiency Improvement and Cost Saving Opportunities for the Pharmaceutical Industry: An ENERGY STAR Guide for Energy and Plant Managers",
+    "sourceUrl": "https://www.osti.gov/servlets/purl/929403",
+    "publisher": "美国能源部劳伦斯伯克利国家实验室"
+  }
+]

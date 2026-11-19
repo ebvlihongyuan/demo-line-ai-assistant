@@ -1,0 +1,62 @@
+[
+  {
+    "id": "quality-sampling-plan",
+    "category": "质量",
+    "title": "采样方案与代表性",
+    "content": "制定化工原料、过程物料或成品的检验计划时，应先明确批次/总体、目标分析物或性质、拟支持的质量判断及所需数据质量，再确定取样位置、时间、方式和样品数。EPA质量术语将代表性作为数据质量指标，并区分单点单时的瞬时样与按总体关系取得的样品；因此不能把一次方便取样直接视为整批代表。对非均匀物料，应依适用产品标准、经验证的企业方法和风险设计取样，记录偏离及限制。",
+    "keywords": ["化工采样", "代表性", "批次", "取样计划", "数据质量", "质量检验", "采样", "取样"],
+    "sourceTitle": "QA Glossary",
+    "sourceUrl": "https://archive.epa.gov/emap/archive-emap/web/html/qa_terms.html",
+    "publisher": "United States Environmental Protection Agency"
+  },
+  {
+    "id": "quality-sample-integrity",
+    "category": "质量",
+    "title": "样品交接与完整性",
+    "content": "样品从现场或生产线进入实验室后，应维持可核查的责任交接链，确保样品、数据和记录的物理安全及对应关系。EPA将chain-of-custody定义为连续不中断的责任记录；企业可将样品唯一编号、采样人、采样时间地点、封装状态、交接人与接收时间、异常和保存/处理记录纳入受控表单。标签或封签破损、身份不明、记录断档时，应标注并评估是否可用于原定判定，不能仅凭检测结果正常而默认样品有效。",
+    "keywords": ["样品交接", "监管链", "样品编号", "封签", "样品完整性", "记录", "追溯", "质量追溯", "批次追溯"],
+    "sourceTitle": "QA Glossary",
+    "sourceUrl": "https://archive.epa.gov/emap/archive-emap/web/html/qa_terms.html",
+    "publisher": "United States Environmental Protection Agency"
+  },
+  {
+    "id": "quality-analysis-qc",
+    "category": "质量",
+    "title": "分析方法与批次质量控制",
+    "content": "化学分析应使用与目标物、基体和用途相适配的现行标准方法或经确认/验证的方法，并按书面程序执行。EPA术语将分析批定义为使用相同方法、试剂批次并在同一或连续时段处理的一组样品，且应包含质量控制样；空白可检查采样或分析过程引入的背景，平行样可评估相应步骤的精密度，校准标准用于建立仪器响应关系。质控结果异常时应调查、记录并判断受影响数据，不能把某一种质控样的表现等同于全部测量过程有效。",
+    "keywords": ["分析方法", "分析批", "空白样", "平行样", "校准", "质控", "质量检验", "检验", "质量控制"],
+    "sourceTitle": "QA Glossary",
+    "sourceUrl": "https://archive.epa.gov/emap/archive-emap/web/html/qa_terms.html",
+    "publisher": "United States Environmental Protection Agency"
+  },
+  {
+    "id": "quality-lab-competence",
+    "category": "质量",
+    "title": "实验室能力与结果有效性",
+    "content": "对化工产品检测或委外分析，应核对实验室是否具备对应检测、采样或校准项目的能力，关注方法适用范围、人员与设备、结果报告及必要的能力证明。ISO说明ISO/IEC 17025适用于希望获得可靠结果的各类检测、采样和校准机构，目的在于证明实验室有能力并产生有效结果，促进对结果的信任；这并不意味着任一实验室或任一检测项目自动适用，也不替代产品法规、合同规格或方法范围核对。委托方应按具体分析物和基体确认能力覆盖情况。",
+    "keywords": ["ISO/IEC 17025", "实验室能力", "检测", "采样", "校准", "结果有效性"],
+    "sourceTitle": "ISO/IEC 17025 — Testing and calibration laboratories",
+    "sourceUrl": "https://www.iso.org/ISO-IEC-17025-testing-and-calibration-laboratories.html",
+    "publisher": "International Organization for Standardization"
+  },
+  {
+    "id": "quality-management-system",
+    "category": "质量",
+    "title": "化工质量管理体系与持续改进",
+    "content": "将质量要求落实到化工采购、生产、检验和放行流程时，可建立职责清晰、相互衔接的过程与程序，形成受控文件和记录，定期评价过程表现并依据问题采取改进。ISO对质量管理体系的介绍强调由组织按自身情境设计政策、过程和程序，以稳定输出、减少错误，并通过评审、审核和记录支持追溯与问责。该框架是管理思路，不是某产品的技术指标或对法规符合性的替代；具体控制点、验收标准和频次应来自适用法规、产品标准、客户约定及风险评估。",
+    "keywords": ["质量管理体系", "化工质量", "过程控制", "文件记录", "审核", "持续改进"],
+    "sourceTitle": "Quality management systems: An introduction",
+    "sourceUrl": "https://www.iso.org/quality-management/what-is-qms",
+    "publisher": "International Organization for Standardization"
+  },
+  {
+    "id": "quality-chemical-storage",
+    "category": "质量",
+    "title": "化学品与实验室耗材储存质量",
+    "content": "储存化学品、试剂和检验耗材时，应按供应商标示的温度等条件存放，并检查光照、湿度、虫害及跌落损坏等外部影响；收货时记录名称、批次或收货/制备信息、验收情况、开封和有效期及后续处置。WHO实验室质量工具建议按供应商条件储存，按先进先出管理，并将临近有效期或较早批次置于优先领用位置；同时根据危险性质选择适当安全设施、限制授权人员进入并清楚标示危害。具体储存要求以该化学品标签、SDS和适用法规为准，不能套用单一温度或通用期限。",
+    "keywords": ["化学品储存", "试剂", "耗材", "先进先出", "有效期", "SDS", "储存条件"],
+    "sourceTitle": "Store supplies appropriately",
+    "sourceUrl": "https://extranet.who.int/lqsi/content/store-supplies-appropriately",
+    "publisher": "World Health Organization"
+  }
+]
