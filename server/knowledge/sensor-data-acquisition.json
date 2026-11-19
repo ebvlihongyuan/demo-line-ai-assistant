@@ -1,0 +1,63 @@
+[
+  {
+    "id": "sensor-data-acquisition-opcua-path",
+    "category": "数据采集",
+    "title": "传感器经PLC与OPC UA进入上位系统",
+    "content": "常见采集链路可设计为传感器或仪表接入PLC输入/现场总线，由PLC完成量程换算与状态整理，再由采集网关或PLC通信服务通过OPC UA等接口供上位监控、历史库读取。实际可用路径取决于设备接口、驱动、网络配置及权限，不能据此推定示范线已接入设备。西门子示例要求配置S7-1500 OPC UA服务器和节点；客户端读取或订阅所得服务器时间戳不必然等于现场事件发生时刻。",
+    "keywords": [
+      "传感器",
+      "PLC",
+      "采集网关",
+      "上位系统",
+      "OPC UA",
+      "数据路径",
+      "数据采集",
+      "传感器数据采集",
+      "采集系统"
+    ],
+    "sourceTitle": "OPC UA SetDataValue",
+    "sourceUrl": "https://support.industry.siemens.com/cs/attachments/109820694/109820694_OPC-UA_SetDataValue_DOC_V1.0_en.pdf",
+    "publisher": "Siemens AG"
+  },
+  {
+    "id": "sensor-data-acquisition-quality-time",
+    "category": "数据采集",
+    "title": "采样周期、数据质量与事件时间戳",
+    "content": "采样或订阅周期应依据过程变化速度、控制与监视用途、通信负载及存储能力在具体系统中配置；固定轮询只说明读取节奏，不保证捕获两个读取时刻之间发生的短暂变化。西门子资料指出，S7-1500的OPC UA服务器在客户端读取或订阅请求时生成的时间戳可能晚于源事件；需要事件时间时，应由适用的PLC程序提供SourceTimeStamp，并同时传递StatusCode以表达数据状态。应保留质量状态并识别无效、陈旧或通信中断数据，不能将单一采样周期或时间戳精度假定为通用保证。",
+    "keywords": [
+      "采样周期",
+      "数据质量",
+      "SourceTimeStamp",
+      "StatusCode",
+      "OPC UA",
+      "轮询",
+      "数据采集",
+      "传感器数据采集",
+      "采集系统"
+    ],
+    "sourceTitle": "OPC UA SetDataValue",
+    "sourceUrl": "https://support.industry.siemens.com/cs/attachments/109820694/109820694_OPC-UA_SetDataValue_DOC_V1.0_en.pdf",
+    "publisher": "Siemens AG"
+  },
+  {
+    "id": "sensor-data-acquisition-network-boundary",
+    "category": "数据采集",
+    "title": "通信故障监测与控制网络安全边界",
+    "content": "采集链路应区分现场控制通信与向上位系统的数据传送，并为通信中断、节点不可达或数据陈旧设置可配置的状态监测和报警；报警条件及阈值须由项目依据设备能力和工艺风险验证，不能套用未核实的默认值。CISA建议将OT与IT分段，在必要跨区通信处使用DMZ及防火墙，仅允许特定设备通过指定连接，并监测和约束跨区流量。该资料是美国网络安全机构指导，不是中国法律或规范；分段措施也不替代过程安全设计，不能据此开放上位系统对PLC的控制写入权限。",
+    "keywords": [
+      "断线报警",
+      "通信故障",
+      "OT",
+      "IT",
+      "网络分段",
+      "DMZ",
+      "防火墙",
+      "数据采集",
+      "传感器数据采集",
+      "采集系统"
+    ],
+    "sourceTitle": "Layering Network Security Through Segmentation",
+    "sourceUrl": "https://www.cisa.gov/sites/default/files/2023-01/layering-network-security-segmentation_infographic_508_0.pdf",
+    "publisher": "Cybersecurity and Infrastructure Security Agency (CISA)"
+  }
+]

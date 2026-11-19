@@ -1,0 +1,65 @@
+[
+  {
+    "id": "sensor-motor-temperature-winding-sensors",
+    "category": "传感器",
+    "title": "绕组温度测点与传感器类型",
+    "content": "电机绕组温度可由嵌入绕组槽内的RTD（如该制造商资料所述PT100）、热敏电阻或定温开关检测；不同类型的测量与动作特性不同，不能互换解释。制造商示例中，绕组RTD按相布置，常见配置为每相一个，实际数量和位置以具体设备设计及接线资料为准。嵌入式测点反映安装位置温度，不等同于所有绕组位置的最高热点；未配置或未接入测点时，不得声称已获得实时绕组温度。检修和测量应遵守设备电气隔离及厂家安全要求。",
+    "keywords": [
+      "电机绕组",
+      "温度测量",
+      "RTD",
+      "PT100",
+      "热敏电阻",
+      "测点",
+      "电机温度",
+      "电机测温",
+      "电机温度报警",
+      "温度"
+    ],
+    "sourceTitle": "AGN 027 - Winding and Bearing Temperature Sensors",
+    "sourceUrl": "https://www.stamford-avk.com/sites/stamfordavk/files/AGN027_C.pdf",
+    "publisher": "Cummins Generator Technologies（STAMFORD/AvK）"
+  },
+  {
+    "id": "sensor-motor-temperature-bearing-measurement",
+    "category": "传感器",
+    "title": "轴承温度测点及读数解释",
+    "content": "轴承温度可由轴承RTD测量；制造商资料指出，其示例中测点通常装在轴承套或特定端盖位置，结构不同会改变安装位置。ABB监测资料介绍其服务通常在轴承布置两个RTD，但这是该服务的常见配置，不代表所有电机都如此。轴承测点读数会受机座、转子、外部驱动端结构及停机后的散热条件影响，不能仅凭温度读数断定轴承摩擦故障。应结合设备结构、负载与测量趋势，由合格人员按厂家说明判断；没有实际传感器数据时不得报告当前温度或状态。",
+    "keywords": [
+      "轴承温度",
+      "轴承RTD",
+      "测点位置",
+      "驱动端",
+      "非驱动端",
+      "温度解释",
+      "电机温度",
+      "电机测温",
+      "电机温度报警",
+      "温度"
+    ],
+    "sourceTitle": "AGN 027 - Winding and Bearing Temperature Sensors",
+    "sourceUrl": "https://www.stamford-avk.com/sites/stamfordavk/files/AGN027_C.pdf",
+    "publisher": "Cummins Generator Technologies（STAMFORD/AvK）"
+  },
+  {
+    "id": "sensor-motor-temperature-trend-limits",
+    "category": "传感器",
+    "title": "温度趋势与报警限值的使用边界",
+    "content": "温度趋势应结合负载、运行工况和设备自身基线解读；趋势变化可提示需要检查，但单一温升不能直接确认为故障。报警与停机限值必须依据该电机铭牌、制造商技术文件、传感器配置及经确认的调试参数设定。STAMFORD/AvK资料中的示例数值依赖其发电机类别和假设条件，不能移作其他设备的通用阈值或中国法规要求。ABB资料也说明其监测报警按单台设备配置。知识系统若未接入并验证传感器及实时数据，只能提供通用说明，不得编造当前温度、趋势、告警或设备在线状态。",
+    "keywords": [
+      "温度趋势",
+      "报警限值",
+      "厂家规范",
+      "铭牌",
+      "调试",
+      "实时状态",
+      "电机温度",
+      "电机测温",
+      "电机温度报警",
+      "温度"
+    ],
+    "sourceTitle": "常见问题- 远程状态监测（高级服务）",
+    "sourceUrl": "https://new.abb.com/motors-generators/zh/motor-and-generators-service/advanced-services/remote-condition-monitoring/faqs",
+    "publisher": "ABB"
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "sensor-level-gwr-principle",
+    "category": "传感器",
+    "title": "导波雷达液位与界面测量原理及适用介质",
+    "content": "导波雷达采用时域反射原理，微波脉冲沿探杆传播，并根据液面或介质界面的回波时间计算距离，可用于液位及部分双液层界面测量。其探杆接触介质，适配液体、浆液等应用，但需按介质和安装空间选择探头；低介电常数介质、泡沫层及界面条件会影响回波。不能仅凭“雷达”名称认定适用于任意化学品，应核对具体型号与介质兼容性。",
+    "keywords": [
+      "液位",
+      "导波雷达",
+      "时域反射",
+      "介质",
+      "界面",
+      "探杆",
+      "液位传感器",
+      "液位监测"
+    ],
+    "sourceTitle": "Guided Wave Radar Transmitters",
+    "sourceUrl": "https://www.emerson.com/en/measurement-instrumentation/catalog/level-measurement/level-transmitters/guided-wave-radar-transmitters",
+    "publisher": "Emerson"
+  },
+  {
+    "id": "sensor-level-range-installation",
+    "category": "传感器",
+    "title": "量程配置与安装条件核对",
+    "content": "导波雷达量程与回波表现受探头型式、安装位置和罐内障碍物等条件影响；制造商资料指出探头选择受安装限制，探杆不应直接接触金属物，也不应置于可能干扰工艺的位置，例如搅拌器、泵或料斗出口附近。配置时应依据具体仪表说明书和容器几何核对测量范围、盲区及探头适用性，并以现场可追溯参考进行核验；不得把单一型号的性能或免校准表述推广为所有设备的保证。",
+    "keywords": [
+      "量程",
+      "校准",
+      "安装",
+      "盲区",
+      "探头",
+      "回波",
+      "液位传感器",
+      "液位监测",
+      "液位"
+    ],
+    "sourceTitle": "Guided Wave Radar Transmitters",
+    "sourceUrl": "https://www.emerson.com/en/measurement-instrumentation/catalog/level-measurement/level-transmitters/guided-wave-radar-transmitters",
+    "publisher": "Emerson"
+  },
+  {
+    "id": "sensor-level-alarm-signal-integrity",
+    "category": "传感器",
+    "title": "上下限报警验证与读数失真安全边界",
+    "content": "液位高低限报警值应由工艺风险评估、容器允许操作范围及经批准的控制方案确定，不能套用未核实的默认阈值。制造商说明可通过完整或部分证明试验模拟过程条件触发高液位报警，并检查信号是否正确到达主机；这类测试有助于验证传感器至控制系统链路，但不等同于证明现场真实液位准确。泡沫、低介电常数、探头安装限制或回波异常可能造成读数偏差，读数可疑时不得据此解除安全措施，应按现场规程采用独立核查并交由授权人员处置。",
+    "keywords": [
+      "高液位报警",
+      "低液位报警",
+      "证明试验",
+      "信号链路",
+      "失真",
+      "安全边界",
+      "液位传感器",
+      "液位监测",
+      "液位"
+    ],
+    "sourceTitle": "Guided Wave Radar Transmitters",
+    "sourceUrl": "https://www.emerson.com/en/measurement-instrumentation/catalog/level-measurement/level-transmitters/guided-wave-radar-transmitters",
+    "publisher": "Emerson"
+  }
+]

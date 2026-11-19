@@ -1,0 +1,63 @@
+[
+  {
+    "id": "sensor-pressure-reference",
+    "category": "传感器",
+    "title": "压力测量类型、量程与表压绝压基准",
+    "content": "压力测量可采用差压、表压或绝压，选型应按工况变量、设计压力及仪表型号可用范围核对，不能把某一型号量程当作通用范围。表压以当地大气压为零点，可为正或负；绝压以理想真空为零点且为正值。真空或需排除大气压变化影响的测量应考虑绝压；设备承压监视常用表压。表压与绝压不可直接混读或混设报警值，换算还需匹配当时大气压。",
+    "keywords": [
+      "压力测量",
+      "差压",
+      "表压",
+      "绝压",
+      "量程",
+      "真空",
+      "压力传感器",
+      "压力监测",
+      "压力"
+    ],
+    "sourceTitle": "Rosemount 3051 压力变送器",
+    "sourceUrl": "https://www.emerson.com/is/content/emerson/zh/measurement-instrumentation/technical/products/pressure/documents/doc-rosemount-3051-00813-0105-4001.pdf",
+    "publisher": "Emerson（艾默生）"
+  },
+  {
+    "id": "sensor-pressure-calibration",
+    "category": "传感器",
+    "title": "压力变送器量程核对与校准",
+    "content": "校准应先核实变送器测量类型、工程单位、配置量程及传感器上下限，再用适当的压力标准在受控条件下比较输入压力与输出；零点或量程调整须依该型号说明执行并记录调整前后结果。部分型号支持数字零点调校或模拟量程设置，但功能选项并不等于校准已完成。校准前必须依现场程序隔离、泄压并确认介质和作业风险；不得在带压或危险介质设备上擅自拆卸，也不能用未核验的默认阈值代替校准。",
+    "keywords": [
+      "压力校准",
+      "量程",
+      "零点",
+      "标准器",
+      "隔离",
+      "泄压",
+      "压力传感器",
+      "压力监测",
+      "压力"
+    ],
+    "sourceTitle": "Rosemount 3051 压力变送器",
+    "sourceUrl": "https://www.emerson.com/is/content/emerson/zh/measurement-instrumentation/technical/products/pressure/documents/doc-rosemount-3051-00813-0105-4001.pdf",
+    "publisher": "Emerson（艾默生）"
+  },
+  {
+    "id": "sensor-pressure-process-fault",
+    "category": "传感器",
+    "title": "过程相容性、报警与测点故障边界",
+    "content": "压力测点的接液膜片、过程连接和密封材料须按介质腐蚀性、温度、压力及设备认证逐项匹配，不能仅凭变送器量程判定相容；具体限制以所选型号和材质资料为准。导压管堵塞、泄漏或回路完整性异常会影响测量或信号，部分变送器具备相应诊断，但诊断覆盖范围取决于型号与选项，不能据此断定过程安全。传感器故障、通信异常和真实工艺超限应分开排查；报警阈值及联锁逻辑须由现场设计和风险分析确定，系统不得预设为已接入真实设备。",
+    "keywords": [
+      "过程相容",
+      "接液材料",
+      "导压管堵塞",
+      "回路完整性",
+      "测点故障",
+      "报警",
+      "联锁",
+      "压力传感器",
+      "压力监测",
+      "压力"
+    ],
+    "sourceTitle": "Rosemount 3051 压力变送器",
+    "sourceUrl": "https://www.emerson.com/is/content/emerson/zh/measurement-instrumentation/technical/products/pressure/documents/doc-rosemount-3051-00813-0105-4001.pdf",
+    "publisher": "Emerson（艾默生）"
+  }
+]

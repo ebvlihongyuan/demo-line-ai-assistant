@@ -17,6 +17,24 @@ describe("chemical knowledge retrieval", () => {
     expect(retrieveKnowledge(ask("化工质量检验如何做好追溯？")).some(entry => entry.category === "质量")).toBe(true);
     expect(retrieveKnowledge(ask("蒸汽系统可以如何节能？")).some(entry => entry.category === "能源")).toBe(true);
   });
+  it("retrieves all requested sensor and data acquisition topics", () => {
+    const cases = [
+      ["电机温度怎么监测？", "sensor-motor-temperature-"],
+      ["电机振动异常怎么监测？", "sensor-motor-vibration-"],
+      ["环境噪音怎么监测？", "sensor-noise-"],
+      ["阀门开关状态如何预警？", "sensor-valve-"],
+      ["压力传感器怎么选择？", "sensor-pressure-"],
+      ["液位传感器怎么选择？", "sensor-level-"],
+      ["传感器数据如何采集？", "sensor-data-acquisition-"],
+    ];
+    for (const [question, prefix] of cases) {
+      expect(retrieveKnowledge(ask(question)).some(entry => entry.id.startsWith(prefix)), question).toBe(true);
+    }
+    const combined = retrieveKnowledge(ask("压力和液位传感器如何选用？"));
+    expect(combined.some(entry => entry.id.startsWith("sensor-pressure-"))).toBe(true);
+    expect(combined.some(entry => entry.id.startsWith("sensor-level-"))).toBe(true);
+    expect(retrieveKnowledge(ask("厂界环境噪声如何监测？")).some(entry => entry.id === "sensor-noise-boundary-environment")).toBe(true);
+  });
   it("filters out unrelated sources when the question identifies a topic", () => {
     expect(retrieveKnowledge(ask("化工质量检验如何做好追溯？")).every(entry => entry.category === "质量")).toBe(true);
     expect(retrieveKnowledge(ask("压力容器维护应关注什么？")).every(entry => entry.title.includes("压力容器"))).toBe(true);

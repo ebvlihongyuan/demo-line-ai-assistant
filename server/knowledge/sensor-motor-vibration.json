@@ -1,0 +1,64 @@
+[
+  {
+    "id": "sensor-motor-vibration-bearing-sensors",
+    "category": "传感器",
+    "title": "轴承与旋转部件的振动传感器选择",
+    "content": "振动监测可使用加速度传感器观察振动信号；测量旋转轴位移时可考虑接近式探头，低频测量可评估速度传感器。不同传感器的量测对象和适用条件不同，不能把一种传感器读数直接等同于另一种指标。轴承振动异常可提示需要检查，但仅凭宽带振动值不能诊断滚动轴承内部状态；应结合设备结构、测量位置、信号特征及专业判断。",
+    "keywords": [
+      "电机",
+      "轴承",
+      "加速度传感器",
+      "接近式探头",
+      "速度传感器",
+      "测量对象",
+      "电机振动",
+      "振动监测",
+      "振动"
+    ],
+    "sourceTitle": "什么是振动监测？—状态监测",
+    "sourceUrl": "https://www.ni.com/zh-cn/solutions/condition-monitoring/what-is-vibration-monitoring.html",
+    "publisher": "NI（National Instruments）"
+  },
+  {
+    "id": "sensor-motor-vibration-measurement-points",
+    "category": "传感器",
+    "title": "测点布置与振动评价适用范围",
+    "content": "振动测点应对应明确的测量对象，可布置在轴、轴承、轴承座或机壳等部位；测量与评价前须确认设备类型、转速、支承和运行条件。ISO 20816-3面向其范围内的特定工业机组，要求在现场、额定转速范围内的稳态工况测量，并不适用于所有泵、电机或旋转设备。安装位置或机组类型不同，评价条件可能不适用；不得将该标准误作中国法律要求或未经确认的本站报警阈值。",
+    "keywords": [
+      "测点",
+      "轴承座",
+      "机壳",
+      "现场测量",
+      "稳态工况",
+      "适用范围",
+      "ISO 20816-3",
+      "电机振动",
+      "振动监测",
+      "振动"
+    ],
+    "sourceTitle": "ISO 20816-3:2022 - Mechanical vibration",
+    "sourceUrl": "https://www.iso.org/standard/78311.html",
+    "publisher": "国际标准化组织（ISO）"
+  },
+  {
+    "id": "sensor-motor-vibration-trend-operation-safety",
+    "category": "传感器",
+    "title": "振动趋势应结合工况并先排查异常",
+    "content": "记录振动趋势时，应尽量对照相同测点、测量方式和可比运行状态，并标注转速或负荷等工况变化；标准评价针对规定范围内的稳态运行条件，不能把启停或工况切换时的读数直接与稳态判据相比。振动升高可能与磨损、不对中、不平衡或其他因素有关，也可能受外部传入振动影响。出现异常先核对传感器、安装与工况并按现场规程通知专业人员评估，不凭单次读数盲目调整、拆卸或触碰运行设备，也不默认自动停机。",
+    "keywords": [
+      "趋势",
+      "工况",
+      "转速",
+      "负荷",
+      "异常排查",
+      "外部振动",
+      "安全边界",
+      "电机振动",
+      "振动监测",
+      "振动"
+    ],
+    "sourceTitle": "ISO 20816-3:2022 - Mechanical vibration",
+    "sourceUrl": "https://www.iso.org/standard/78311.html",
+    "publisher": "国际标准化组织（ISO）"
+  }
+]
