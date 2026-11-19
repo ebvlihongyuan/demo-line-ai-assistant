@@ -1,25 +1,15 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import { useState } from "react";
+import { ArrowDownRight, ArrowRight, BookOpenText, MessageCircleMore, Sparkles } from "lucide-react";
+import ChatWidget, { BrandMark } from "@/components/ChatWidget";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
-    </div>
-  );
+  const [chatOpen, setChatOpen] = useState(false);
+  return <div className="site-shell">
+    <header className="site-header"><div className="header-inner"><div className="site-brand"><BrandMark /><div><strong>小光 <span>AI</span></strong><small>YOUR AI ASSISTANT</small></div></div><div className="header-right"><span className="header-note"><i /> 智能客服，随时在你身边</span><button className="header-cta" onClick={() => setChatOpen(true)}>开启对话 <ArrowRight size={15} /></button></div></div></header>
+    <main className="main-content"><section className="hero"><div className="hero-copy"><div className="eyebrow"><span className="eyebrow-line" /> HELLO, I'M XIAOGUANG <Sparkles size={14} /></div><h1>有问题，<br /><span>小光来帮你。</span></h1><p className="hero-description">从解答疑问到梳理内容，<br />让每一个问题，都有清晰的回应。</p><button className="primary-button" onClick={() => setChatOpen(true)}>开始和小光对话 <ArrowRight size={17} /></button><div className="hero-caption"><span className="caption-icon"><Sparkles size={13} /></span> 无需复杂操作，想到什么就问什么</div></div>
+      <div className="hero-art" aria-hidden="true"><div className="art-grid" /><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="art-sparkle art-sparkle-one">✳</div><div className="art-sparkle art-sparkle-two">✧</div><div className="art-center"><div className="art-face"><Sparkles size={44} strokeWidth={1.35} /></div><div className="art-shadow" /></div><div className="floating-note note-top"><span className="note-icon"><MessageCircleMore size={17} /></span><div><small>随时提问</small><strong>你好，有什么可以帮你？</strong></div></div><div className="floating-note note-bottom"><span className="note-icon book"><BookOpenText size={17} /></span><div><small>轻松导读</small><strong>重点内容，一目了然</strong></div><span className="note-arrow"><ArrowDownRight size={15} /></span></div><span className="art-index">A LITTLE HELP, A LOT OF CLARITY.</span></div></section>
+      <section className="feature-strip" aria-label="小光功能"><div className="feature-intro"><span>WHAT I CAN DO</span><strong>一点帮助，<br />让事情变简单。</strong></div><div className="feature"><span className="feature-number">01 /</span><div className="feature-icon"><MessageCircleMore size={19} /></div><h2>自然对话</h2><p>像聊天一样提问，轻松表达你的想法。</p></div><div className="feature"><span className="feature-number">02 /</span><div className="feature-icon"><Sparkles size={19} /></div><h2>贴心解答</h2><p>理解你的问题，给出清晰、有针对性的回应。</p></div><div className="feature"><span className="feature-number">03 /</span><div className="feature-icon"><BookOpenText size={19} /></div><h2>内容导读</h2><p>整理重点与思路，帮你更快读懂内容。</p></div></section>
+      <div className="page-bottom"><span>© XIAOGUANG AI ASSISTANT</span><span>有疑问？点击右下角，随时聊聊 <ArrowDownRight size={14} /></span></div>
+    </main><ChatWidget open={chatOpen} setOpen={setChatOpen} />
+  </div>;
 }
