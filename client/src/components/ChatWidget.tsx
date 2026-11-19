@@ -26,13 +26,15 @@ export default function ChatWidget({ open, setOpen }: { open: boolean; setOpen: 
   const [failed, setFailed] = useState(false);
   const [pending, setPending] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const mutation = trpc.chat.reply.useMutation();
   const overview = trpc.knowledge.overview.useQuery(undefined, { enabled: open, staleTime: 300000 });
 
   useEffect(() => {
     try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(messages)); } catch { /* storage is optional */ }
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messages.length || pending || failed) bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    else if (bodyRef.current) bodyRef.current.scrollTop = 0;
   }, [messages, pending, failed, open]);
 
   async function requestReply(history: Message[]) {
@@ -78,7 +80,7 @@ export default function ChatWidget({ open, setOpen }: { open: boolean; setOpen: 
         <div className="header-actions"><button onClick={clearChat} disabled={pending} title="清空对话" aria-label="清空对话"><RotateCcw size={17} /></button><button onClick={() => setOpen(false)} title="收起对话" aria-label="收起对话"><ChevronDown size={21} /></button></div>
       </header>
       <div className="knowledge-bar"><div className="knowledge-bar-top"><BookOpenText size={14} /><span>示范线知识库</span>{overview.data && <span className="knowledge-count">{overview.data.total} 条</span>}</div><div className="knowledge-fields">质量 · 设备 · 安全 · 能源 · 传感器 · 数据采集</div></div>
-      <div className="chat-body" aria-live="polite">
+      <div className="chat-body" ref={bodyRef} aria-live="polite">
         <div className="date-label">和示范线助手开始对话 <span>✦</span></div>
         <div className="message-row assistant-row"><BrandMark small /><div className="assistant-content"><div className="message-author">示范线助手</div><div className="bubble assistant-bubble">你好，我是示范线AI智能助手。<br />我可以回答化工质量、设备、安全、能源以及传感器和数据采集相关问题。<br /><br /><span className="live-data-note">目前尚未连接现场实时传感器数据。</span></div></div></div>
         {messages.length === 0 && <div className="suggestion-block"><p>试试这样问</p>{examples.map(example => <button key={example} onClick={() => send(example)}><span>{example}</span><span>↗</span></button>)}</div>}

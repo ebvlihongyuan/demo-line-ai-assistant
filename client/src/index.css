@@ -29,3 +29,9 @@ button:focus-visible,textarea:focus-visible{outline:3px solid #91c7af;outline-of
 
 .site-brand strong.full-brand{font-size:16px;letter-spacing:.01em}.assistant-brand{font-size:14px;white-space:nowrap}.knowledge-bar{display:block;padding:8px 16px;min-height:0}.knowledge-bar-top{display:flex;align-items:center;gap:7px}.knowledge-bar-top .knowledge-count{margin-left:auto}.knowledge-fields{margin:4px 0 0 21px;font-size:10px;color:#8da999;font-weight:400}.live-data-note{color:#82978a;font-size:11px}
 @media(max-width:380px){.site-brand strong.full-brand{font-size:14px}.site-brand small{font-size:7px}.assistant-brand{font-size:13px}.knowledge-fields{font-size:9px}}
+
+/* An embedded frame contains only the floating assistant, not the demo homepage. */
+html.embed-mode,html.embed-mode body{background:transparent!important;min-width:0;overflow:hidden}
+html.embed-mode #root{width:100%;height:100%}
+html.embed-mode .widget-layer{right:0;bottom:0;gap:8px}
+html.embed-mode .chat-panel{width:min(370px,calc(100vw - 8px));height:min(600px,calc(100dvh - 70px));min-height:0}
