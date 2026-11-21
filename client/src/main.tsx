@@ -5,9 +5,11 @@ import { httpBatchLink, TRPCClientError } from "@trpc/client";
 import { createRoot } from "react-dom/client";
 import superjson from "superjson";
 import App from "./App";
+import LocalAccessGate from "./components/LocalAccessGate";
 import { startLogin } from "./const";
 import "./index.css";
 
+let localAccessToken = ""; // Memory only; never persisted in browser storage.
 const queryClient = new QueryClient();
 
 const redirectToLoginIfUnauthorized = (error: unknown) => {
@@ -54,13 +56,13 @@ const trpcClient = trpc.createClient({
             const pair = raw.split(";").find(s => s.trim().startsWith(prefix));
             const token = pair?.trim().slice(prefix.length);
             if (token) {
-              return { Authorization: `Bearer ${token}` };
+              return { Authorization: `Bearer ${token}`, "X-Local-Assistant": "1", ...(localAccessToken ? { "X-Local-Access": localAccessToken } : {}) };
             }
           }
         } catch {
           // sessionStorage unavailable
         }
-        return {};
+        return { "X-Local-Assistant": "1", ...(localAccessToken ? { "X-Local-Access": localAccessToken } : {}) };
       },
       fetch(input, init) {
         return globalThis.fetch(input, {
@@ -75,7 +77,7 @@ const trpcClient = trpc.createClient({
 createRoot(document.getElementById("root")!).render(
   <trpc.Provider client={trpcClient} queryClient={queryClient}>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <LocalAccessGate onAccess={token => { localAccessToken = token; }}><App /></LocalAccessGate>
     </QueryClientProvider>
   </trpc.Provider>
 );
